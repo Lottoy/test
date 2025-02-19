@@ -1,0 +1,35 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { FaTwitter, FaDiscord, FaTelegram } from "react-icons/fa";
+
+export default function MemeCoinHome() {
+  return (
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-b from-yellow-200 to-yellow-400 p-6">
+      <h1 className="text-5xl font-bold text-gray-800 mt-10">🚀 MemeCoin 🚀</h1>
+      <p className="mt-4 text-lg text-gray-700 text-center max-w-xl">
+        The funniest and most powerful meme cryptocurrency! Join our community
+        and be part of the revolution!
+      </p>
+      <Card className="mt-10 p-6 bg-white shadow-xl rounded-2xl w-full max-w-lg text-center">
+        <CardContent>
+          <h2 className="text-3xl font-bold text-gray-900">Tokenomics</h2>
+          <p className="mt-2 text-gray-600">Total Supply: 1,000,000,000 MEME</p>
+          <p className="text-gray-600">Liquidity Locked: ✅</p>
+          <p className="text-gray-600">Contract Address: 0x123...456</p>
+        </CardContent>
+      </Card>
+      <div className="mt-10 flex gap-4">
+        <Button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 flex items-center gap-2">
+          <FaTwitter /> Twitter
+        </Button>
+        <Button className="bg-purple-500 hover:bg-purple-700 text-white px-4 py-2 flex items-center gap-2">
+          <FaDiscord /> Discord
+        </Button>
+        <Button className="bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 flex items-center gap-2">
+          <FaTelegram /> Telegram
+        </Button>
+      </div>
+    </div>
+  );
+}
